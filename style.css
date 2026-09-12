@@ -1,0 +1,128 @@
+* { 
+    box-sizing: border-box; 
+}
+
+html { min-height: 100%; }
+
+body {
+    width: min(780px, calc(100% - 24px));
+    min-height: 680px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #24150e;
+    background: linear-gradient( #fff0df, #fffaf2 52%, #f8d0a9);
+    border: 5px solid #8f3f20; 
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    height: 58px;
+    text-align: center;
+    background: linear-gradient(#d96b32 0 58px, rgba(255, 225, 193, .72) 58px);
+}
+
+h1 {
+    height: 58px;
+    margin: 0;
+    padding: 14px 10px;
+    color: #fffaf4;
+    font-size: 25px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.romualdez {
+    display: block;
+    left: 50%;
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    margin: 0;
+    padding: 4px;
+    object-fit: cover;
+    background: #e9874c;
+    border-radius: 17px;
+    transform: translateX(-50%);
+}
+
+.student_info,
+.skills,
+.academic_grades,
+.contact,
+.visit_school {
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 15px;
+    background: rgba(255, 248, 239, .91);
+}
+
+.student_info {
+    margin-top: 78px;
+    padding-top: 15px;
+    border-radius: 8px 8px 0 0;
+    border-top: 3px solid black;
+}
+
+h2 {
+    margin: 0 0 7px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.student_info { font-size: 12px; line-height: 1.2; }
+.student_info p { margin: 0 14px 5px; }
+.student_info strong { display: inline-block; width: 76px; }
+
+.skills ul {
+    margin: 0 0 5px;
+    padding-left: 27px;
+    font-size: 12px;
+}
+
+.academic_grades table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.academic_grades th, .academic_grades td {
+    padding: 3px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.contact { padding-top: 7px; }
+.contact form { font-size: 12px; }
+.contact label { display: inline-block; width: 55px; margin-bottom: 5px; }
+.contact input[type="text"], .contact input[type="email"], .contact textarea {
+    width: 201px;
+    padding: 4px;
+    font: 11px Arial, sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    vertical-align: top;
+}
+.contact textarea { resize: none; }
+.contact input[type="submit"] {
+    display: block;
+    margin: 5px auto 7px;
+    padding: 5px 17px;
+    color: #35170a;
+    font-weight: bold;
+    background: #f09a5f;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.contact input[type="submit"]:hover { background: #df7939; }
+
+.visit_school {
+    padding: 5px;
+    text-align: center;
+ 
+    border-radius: 0 0 8px 8px;
+}
+.visit_school a { color: #35170a; font-size: 12px; font-weight: bold; }
